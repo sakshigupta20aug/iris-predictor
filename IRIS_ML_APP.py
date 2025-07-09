@@ -59,6 +59,7 @@ predicted_class = iris.target_names[prediction][0].capitalize()
 st.success(f"The predicted Iris flower is: **{predicted_class}**")
 
 # Probability table
+
 st.subheader("📈 Prediction Probability")
 proba_df = pd.DataFrame(prediction_proba, columns=iris.target_names)
 st.dataframe(proba_df.style.highlight_max(axis=1, color='lightgreen'))
