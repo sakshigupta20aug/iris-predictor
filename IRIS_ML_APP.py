@@ -68,7 +68,8 @@ images = {
     'versicolor': 'https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg',
     'virginica': 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg'
 }
-st.image(images[target_names[prediction][0]], caption=f"{predicted_class} Iris", use_column_width=True)
+st.image(images[target_names[prediction][0]], caption=f"{predicted_class} Iris", use_container_width=True)
+
 
 # Show probability table
 st.subheader("📈 Prediction Probability")
