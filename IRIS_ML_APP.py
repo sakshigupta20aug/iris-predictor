@@ -62,13 +62,13 @@ predicted_class = target_names[prediction][0].capitalize()
 st.success(f"The predicted Iris flower is: **{predicted_class}**")
 
 # Show flower image
-st.subheader("🌸 Flower Image")
-images = {
-    'setosa': 'https://upload.wikimedia.org/wikipedia/commons/5/56/Iris_setosa_2.jpg',
-    'versicolor': 'https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg',
-    'virginica': 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg'
-}
-st.image(images[target_names[prediction][0]], caption=f"{predicted_class} Iris", use_container_width=True)
+# st.subheader("🌸 Flower Image")
+# images = {
+#     'setosa': 'https://upload.wikimedia.org/wikipedia/commons/5/56/Iris_setosa_2.jpg',
+#     'versicolor': 'https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg',
+#     'virginica': 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg'
+# }
+# st.image(images[target_names[prediction][0]], caption=f"{predicted_class} Iris", use_container_width=True)
 
 
 # Show probability table
